@@ -2,17 +2,22 @@ namespace oop_basics;
 
 public class Hydra : IDamageable, IAttacker
 {
-    public int HP = 900;
+    private int _hp = 900;
     public NPCType Type = NPCType.Hostile;
     private int _heads = 3;
 
     public void Damage(int amount)
     {
-        HP -= amount;
+        _hp -= amount;
     }
 
     public void Attack(IDamageable enemy)
     {
         enemy.Damage(_heads * 10);
+    }
+
+    public int HP()
+    {
+        return _hp;
     }
 }
