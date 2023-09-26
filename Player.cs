@@ -1,11 +1,5 @@
 namespace oop_basics;
 
-public class Player : Character
+public class Player
 {
-    public Player()
-    {
-        Name = "Hekmat";
-        HP = 200;
-        dmg = 10;
-    }
 }

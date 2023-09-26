@@ -1,11 +1,5 @@
 namespace oop_basics;
 
-public class Hydra : Hostile
+public class Hydra
 {
-    public Hydra()
-    {
-        Name = "Hydra";
-        HP = 900;
-        dmg = 50;
-    }
 }
